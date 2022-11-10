@@ -13,11 +13,12 @@ public abstract class Item {
 
 	@Override
 	public String toString() {
-		return "title=" + title ;
+		return "title=" + title;
 	}
 
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	
+
+	public abstract void accept(ItemVisitor v);
 }
